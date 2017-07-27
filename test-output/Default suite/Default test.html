@@ -1,0 +1,1025 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 27 16:06:23 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12887 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nagesh.utility.PDFUtilTest.checkForFileContent()'><b>checkForFileContent</b><br>Test class: com.nagesh.utility.PDFUtilTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Closing Disclosure This form is a statement of final loan terms and closing costs. Compare this
+document with your Loan Estimate.
+Closing Information Transaction Information Loan Information
+Date Issued 4/07/2014
+Closing Date 4/15/2014
+Disbursement Date 4/15/2014
+Settlement Agent Epsilon Title Company
+File # 12-3456
+Property 456 Somewhere Avenue
+Anytown, NY 12345
+Sale Price $240,000
+Borrower Michael Jones &amp; Mary Stone
+123 Anywhere Street
+Anytown, NY 12345
+Seller Steve Cole &amp; Amy Doe
+321 Somewhere Drive
+Anytown, NY 12345
+Lender Ficus Bank
+Loan Term 30 years
+Purpose Purchase
+Product 5/3 Adjustable Rate
+Loan Type 5 Conventional FHA
+VA _____
+Loan ID # 123456789
+MIC # 000654321
+Loan Terms Can this amount increase after closing?
+Loan Amount $211,000 NO
+Interest Rate 4% YES l Adjusts every 3 years starting in year 6
+l Can go as high as 12% in year 15
+l See AIR Table on page 4 for details
+Monthly Principal &amp; Interest
+See projected payments below for your
+Estimated Total Monthly Payment
+$1,007.35 YES l Adjusts every 3 years starting in year 6
+l Can go as high as $1,870 in year 15
+Does the loan have these features?
+Prepayment Penalty NO
+Balloon Payment NO
+Projected Payments
+Payment Calculation
+Principal &amp; Interest
+Mortgage Insurance
+Estimated Escrow
+Amount can increase over time
++
++
+$1,007.35
+135.39
+425.00
++
++
+$1,007 min
+$1,229 max
+135.39
+425.00
++
++
+$1,007 min
+$1,451 max
+135.39
+425.00
++
++
+$1,007 min
+$1,870 max
+-----
+425.00
+Estimated Total
+Monthly Payment $1,567.74 $1,567 - $1,789 $1,567 - $2,011 $1,432 - $2,295
+Years 1-5 Years 6-8 Years 9-11 Years 12-30
+Estimated Taxes, Insurance
+&amp; Assessments
+Amount can increase over time
+See page 4 for details
+$575.00
+a month
+This estimate includes
+5 Property Taxes
+5 Homeowners Insurance
+5 Other: Homeowners Association Dues
+See Escrow Account on page 4 for details. You must pay for other property
+costs separately.
+In escrow?
+YES
+YES
+NO
+Costs at Closing
+Closing Costs $14,530.82 Includes $6,775.00 in Loan Costs + $7,755.82 in Other Costs - $0
+in Lender Credits. See page 2 for details.
+Cash To Close $29,353.32 Includes Closing Costs. See Calculating Cash to Close on page 3 for details.
+CLOSING DISCLOSURE PAGE 1 OF 5 l LOAN ID # 123456789
+Loan Costs At Closing Before Closing At Closing Before Closing Others
+Borrower-Paid Seller-Paid Paid By
+Closing Cost Details
+A. Origination Charges
+01 1% of Loan Amount (Points) $2,110.00
+02 Application Fee $500.00
+03 Automated Underwriting Fee $300.00
+04
+05
+06
+07
+08
+$2,910.00
+B. Services Borrower Did Not Shop For
+01 Appraisal Field Review Fee to John Smith Appraisers Inc. (L)$705.00
+02 Credit Report Fee to Information, Inc. $40.00
+03 Flood Certification Fee to Info Co. $90.00
+04 Property Tax Status Research Fee to Info Co. $150.00
+05
+06
+07
+08
+09
+10
+$280.00
+C. Services Borrower Did Shop For
+01 Pest Inspection Fee to Pests Co. $200.00
+02 Survey Fee to Surveys Co. $385.00
+03 Title-Closing Protection Letter Fee to Epsilon Title Co. $500.00
+04 Title-Examination Fee to Epsilon Title Co. $800.00
+05 Title-Insurance Binder Fee to Epsilon Title Co. $900.00
+06 Title-Lenders Coverage Premium to Epsilon Title Co. $800.00
+07
+08
+09
+10
+$3,585.00
+D. TOTAL LOAN COSTS (Borrower-Paid)
+Loan Costs Subtotals (A + B + C) $6,735.00 $40.00 $705.00
+$6,775.00
+Other Costs
+E. Taxes and Other Government Fees
+01 Recording Fees Deed: $40.00 Mortgage: $145.00 $185.00
+02 Transfer Tax Total to Any State $1,440.00
+$185.00
+F. Prepaids
+01 Homeowner&apos;s Insurance Premium ( 12 mo.) to Insurance Co. $1,800.00
+02 Mortgage Insurance Premium ( 1 mo.) to MI Co. $135.39
+03 Prepaid Interest ( $23.44 per day from 4/15/2014 to 5/01/2014) $375.04
+04 Property Taxes ( 6 mo.) to Any County USA $1,650.00
+05
+$3,960.43
+G. Initial Escrow Payment at Closing
+01 Homeowner&apos;s Insurance $150.00 per month for 2 mo. $300.00
+02 Mortgage Insurance $135.39 per month for 2 mo. $270.78
+03 Property Taxes $275.00 per month for 2 mo. $550.00
+04
+05
+06
+07
+08 Aggregate Adjustment -$360.39
+$760.39
+H. Other
+01 Real Estate Commission (Buyer) to Omega Real Estate Broker $7,200.00
+02 Home Inspection Fee to HOA Acre Inc. $850.00
+03 Home Warranty Fee to Engineers Inc. $750.00
+04
+Homeowner&apos;s Assoc. Special
+Assessment to HOA Acre Inc. $500.00
+05 Mold Inspection Fee to Inspector Inc. $450.00
+06 Real Estate Commission (Seller) to Alpha Real Estate Broker $7,200.00
+07
+Title-Owner&apos;s Coverage Premium
+(optional) to Epsilon Title Co. $1,500.00
+08
+$2,850.00
+I. TOTAL OTHER COSTS (Borrower-Paid)
+Other Costs Subtotals (E + F + G + H) $7,755.82 $16,290.00 $750.00
+$7,755.82
+J. TOTAL CLOSING COSTS (Borrower-Paid)
+Closing Costs Subtotals (D + I) $14,490.82 $40.00 $16,290.00 $750.00 $705.00
+Lender Credits
+$14,530.82
+CLOSING DISCLOSURE PAGE 2 OF 5 l LOAN ID # 123456789
+Calculating Cash to Close Use this table to see what has changed from your Loan Estimate.
+Loan Estimate Final Did this change?
+Total Closing Costs (J) $13,759.00 $14,531.00 YES l See Total Loan Costs (D) and Total Other Costs (I)
+Closing Costs Paid Before Closing $0 -$40.00 YES l You paid these Closing Costs before closing
+Closing Costs Financed
+(Paid from your Loan Amount)
+$0 $0 NO
+Down Payment/Funds from Borrower $29,000.00 $29,000.00 NO
+Deposit -$10,000.00 -$10,000.00 NO
+Funds for Borrower $0 $0 NO
+Seller Credits $0 -$2,500.00 YES l See Seller Credits in Section L
+Adjustments and Other Credits $0 -$1,637.50 YES l See details in Sections K and L
+Cash to Close $32,759.00 $29,353.50
+BORROWER&apos;S TRANSACTION SELLER&apos;S TRANSACTION
+K. Due from Borrower at Closing $254,565.81 M. Due to Seller at Closing $240,075.00
+01 Sale Price of Property $240,000.00 01 Sale Price of Property $240,000.00
+02 Sale Price of Any Personal Property Included in Sale 02 Sale Price of Any Personal Property Included in Sale
+03 Closing Costs Paid at Closing (J) $14,490.82 03
+04 04
+Adjustments 05
+05 06
+06 07
+07 08
+Adjustments for Items Paid by Seller in Advance Adjustments for Items Paid by Seller in Advance
+08 City/Town Taxes to 09 City/Town Taxes to
+09 County Taxes to 10 County Taxes to
+10 Assessments to 11 Assessments to
+11 HOA Dues 4/15/14 to 4/30/14 $75.00 12 HOA Dues 4/15/14 to 4/30/14 $75.00
+12 13
+13 14
+14 15
+15 16
+L. Paid Already by or on Behalf of Borrower at Closing $225,212.50 N. Due from Seller at Closing $119,752.50
+01 Deposit $10,000.00 01 Excess Deposit
+02 Loan Amount $211,000.00 02 Closing Costs Paid at Closing (J) $16,290.00
+03 Existing Loan(s) Assumed or Taken Subject to 03 Existing Loan(s) Assumed or Taken Subject to
+04 04 Payoff of First Mortgage Loan $100,000.00
+05 Seller Credit $2,500.00 05 Payoff of Second Mortgage Loan
+Other Credits 06
+06 Rebate from Epsilon Title Co. from Epsilon Title Co. $750.00 07
+07 08 Seller Credit $2,500.00
+Adjustments 09
+08 10
+09 11
+10 12
+11 13
+Adjustments for Items Unpaid by Seller Adjustments for Items Unpaid by Seller
+12 City/Town Taxes to 14 City/Town Taxes to
+13 County Taxes 1/1/14 to 4/14/14 $962.50 15 County Taxes 1/1/14 to 4/14/14 $962.50
+14 Assessments to 16 Assessments to
+15 17
+16 18
+17 19
+CALCULATION CALCULATION
+Total Due from Borrower at Closing (K) $254,565.81 Total Due to Seller at Closing (M) $240,075.00
+Total Paid Already by or on Behalf of Borrower at Closing (L) -$225,212.50 Total Due from Seller at Closing (N) -$119,752.50
+Cash to Close 5 From To Borrower $29,353.32 Cash to Close From 5 To Seller $120,322.50
+Summaries of Transactions Use this table to see a summary of your transaction.
+CLOSING DISCLOSURE PAGE 3 OF 5 l LOAN ID # 123456789
+Additional Information About This Loan
+Loan Disclosures
+Assumption
+If you sell or transfer this property to another person, your lender
+will allow, under certain conditions, this person to assume this
+loan on the original terms.
+5 will not allow assumption of this loan on the original terms.
+Demand Feature
+Your loan
+has a demand feature, which permits your lender to require early
+repayment of the loan. You should review your note for details.
+5 does not have a demand feature.
+Late Payment
+If your payment is more than 15.00 days late, your lender will charge
+a late fee of 5% of the monthly principal and interest payment.
+Negative Amortization (Increase in Loan Amount)
+Under your loan terms, you
+are scheduled to make monthly payments that do not pay all of
+the interest due that month. As a result, your loan amount will
+increase (negatively amortize), and your loan amount will likely
+become larger than your original loan amount. Increases in your
+loan amount lower the equity you have in this property.
+may have monthly payments that do not pay all of the interest
+due that month. If you do, your loan amount will increase
+(negatively amortize), and, as a result, your loan amount may
+become larger than your original loan amount. Increases in your
+loan amount lower the equity you have in this property.
+5 do not have a negative amortization feature.
+Partial Payments
+Your lender
+5 may accept payments that are less than the full amount due
+(partial payments) and apply them to your loan.
+may hold them in a separate account until you pay the rest of the
+payment, and then apply the full payment to your loan.
+does not accept any partial payments.
+If this loan is sold, your new lender may have a different policy.
+Security Interest
+You are granting a security interest in
+456 Somewhere Avenue, Anytown, NY 12345
+You may lose this property if you do not make your payments or
+satisfy other obligations for this loan.
+Escrow Account
+For now, your loan
+5will have an escrow account (also called an &quot;impound&quot; or &quot;trust&quot;
+account) to pay the property costs listed below. Without an
+escrow account, you would pay them directly possibly in one or
+two large payments a year. Your lender may be liable for penalties
+and interest for failing to make a payment.
+Escrow
+Escrowed
+Property Costs
+over Year 1
+$5,100.00 Estimated total amount over year 1 for
+your escrowed property costs:
+Homeowner&apos;s Insurance, Property
+Taxes
+Non-Escrowed
+Property Costs
+over Year 1
+$1,800.00 Estimated total amount over year 1 for
+your non-escrowed property costs:
+Homeowner&apos;s Association Dues
+You may have other property costs.
+Initial Escrow
+Payment
+$760.39 A cushion for the escrow account you
+pay at closing. See Section G on page 2.
+Monthly Escrow
+Payment
+$425.00 The amount included in your total
+monthly payment.
+will not have an escrow account because you declined it
+your lender does not offer one. You must directly pay your
+property costs, such as taxes and homeowner&apos;s insurance.
+Contact your lender to ask if your loan can have an escrow
+account.
+No Escrow
+Estimated
+Property Costs
+over Year 1
+Estimated total amount over year 1. You
+must pay these costs directly, possibly
+in one or two large payments a year.
+Escrow Waiver Fee
+In the future,
+Your property costs may change and, as a result, your escrow payment
+may change. You may be able to cancel your escrow account,
+but if you do, you must pay your property costs directly. If you fail to
+pay your property taxes, your state or local government may (1)
+impose fines and penalties or (2) place a tax lien on this property. If
+you fail to pay any of your property costs, your lender may (1) add
+the amounts to your loan balance, (2) add an escrow account to
+your loan, or (3) require you to pay for property insurance that the
+lender buys on your behalf, which likely would cost more and
+provide fewer benefits than what you could buy on your own.
+Adjustable Interest Rate (AIR) Table
+Index + Margin LIBOR + 4%
+Initial Interest Rate 4%
+Minimum/Maximum Interest Rate 4%/12%
+Change Frequency
+First Change Beginning of 61st Month
+Subsequent Change Every 36th month after first change
+Limits on Interest Rate Changes
+First Change 2%
+Subsequent Change 2%
+CLOSING DISCLOSURE PAGE 4 OF 5 l LOAN ID # 123456789
+Loan Calculations
+Total of Payments. Total you will have paid after
+you make all payments of principal, interest,
+mortgage insurance, and loan costs, as scheduled. $1.00
+Finance Charge. The dollar amount the loan will
+cost you. $1.00
+Amount Financed. The loan amount available
+after paying your upfront finance charge. $1.00
+Annual Percentage Rate (APR). Your costs over
+the loan term expressed as a rate. This is not your
+interest rate. 1.000%
+Total Interest Percentage (TIP). The total
+amount of interest that you will pay over the loan
+term as a percentage of your loan amount. 1.000%
+Other Disclosures
+Appraisal
+If the property was appraised for your loan, your lender is required to
+give you a copy at no additional cost at least 3 days before closing.
+If you have not yet received it, please contact your lender at the
+information listed below.
+Contract Details
+See your note and security instrument for information about
+l what happens if you fail to make your payments,
+l what is a default on the loan,
+l situations in which your lender can require early repayment of the
+loan, and
+l the rules for making payments before they are due.
+Liability after Foreclosure
+If your lender forecloses on this property and the foreclosure does not
+cover the amount of unpaid balance on this loan,
+5 state law may protect you from liability for the unpaid balance. If you
+refinance or take on any additional debt on this property, you may
+lose this protection and have to pay any debt remaining even after
+foreclosure. You may want to consult a lawyer for more information.
+state law does not protect you from liability for the unpaid balance.
+Loan Acceptance
+You do not have to accept this loan because you have received this form
+or signed a loan application.
+Refinance
+Refinancing this loan will depend on your future financial situation,
+the property value, and market conditions. You may not be able to
+refinance this loan.
+Tax Deductions
+If you borrow more than this property is worth, the interest on the
+loan amount above this property&apos;s fair market value is not deductible
+from your federal income taxes. You should consult a tax advisor for
+more information.
+? Questions? If you have questions about the
+loan terms or costs on this form, use the contact
+information below. To get more information
+or make a complaint, contact the Consumer
+Financial Protection Bureau at
+www.consumerfinance.gov/mortgage-closing
+Contact Information
+Lender Mortgage Broker Real Estate Broker (B) Real Estate Broker (S) Settlement Agent
+Name Ficus Bank Omega Real Estate
+Broker Inc.
+Alpha Real Estate Broker
+Inc.
+Epsilon Title Company
+Address 4321 Random Blvd.,
+Somecity, NY 12345
+789 Local Lane,
+Sometown, NY 12345
+987 Suburb Ct.,
+Someplace, NY 12345
+123 Commerce Pl,
+Somecity, NY 12345
+NMLS ID 111111
+NY License ID NY NY12345 NY NY121212 NY NY987655
+Contact Joe Smith Samuel Green Joseph Cain Sarah Arnold
+Contact NMLS ID 123456
+Contact
+NY License ID
+NY NY54321 NY NY212121 NY NY556788
+Email joe_smith@
+ficusbank.com
+sam@omegare.biz joe@alphare.biz sarah@epsilontitle.com
+Phone 123-456-7890 123-555-1717 321-555-7171 987-555-4321] but found [Closing Disclosure This form is a statement of final loan terms and closing costs. Compare thisdocument with your Loan Estimate. Closing Information Transaction Information Loan Information Date Issued 4/07/2014 Closing Date 4/15/2014 Disbursement Date 4/15/2014 Settlement Agent Epsilon Title Company File # 12-3456 Property 456 Somewhere Avenue Anytown, NY 12345 Sale Price $240,000 Borrower Michael Jones &amp; Mary Stone 123 Anywhere Street Anytown, NY 12345 Seller Steve Cole &amp; Amy Doe 321 Somewhere Drive Anytown, NY 12345 Lender Ficus Bank Loan Term 30 years Purpose Purchase Product 5/3 Adjustable Rate Loan Type 5 Conventional FHA VA _____ Loan ID # 123456789 MIC # 000654321 Loan Terms Can this amount increase after closing? Loan Amount $211,000 NO Interest Rate 4% YES l Adjusts every 3 years starting in year 6 l Can go as high as 12% in year 15 l See AIR Table on page 4 for details Monthly Principal &amp; Interest See projected payments below for your Estimated Total Monthly Payment $1,007.35 YES l Adjusts every 3 years starting in year 6 l Can go as high as $1,870 in year 15 Does the loan have these features? Prepayment Penalty NO Balloon Payment NO Projected Payments Payment Calculation Principal &amp; Interest Mortgage Insurance Estimated Escrow Amount can increase over time + + $1,007.35 135.39 425.00 + + $1,007 min $1,229 max 135.39 425.00 + + $1,007 min $1,451 max 135.39 425.00 + + $1,007 min $1,870 max ----- 425.00 Estimated Total Monthly Payment $1,567.74 $1,567 - $1,789 $1,567 - $2,011 $1,432 - $2,295 Years 1-5 Years 6-8 Years 9-11 Years 12-30 Estimated Taxes, Insurance &amp; Assessments Amount can increase over time See page 4 for details $575.00 a month This estimate includes 5 Property Taxes 5 Homeowners Insurance 5 Other: Homeowners Association Dues See Escrow Account on page 4 for details. You must pay for other property costs separately. In escrow? YES YES NO Costs at Closing Closing Costs $14,530.82 Includes $6,775.00 in Loan Costs + $7,755.82 in Other Costs - $0 in Lender Credits. See page 2 for details. Cash To Close $29,353.32 Includes Closing Costs. See Calculating Cash to Close on page 3 for details. CLOSING DISCLOSURE PAGE 1 OF 5 l LOAN ID # 123456789 Loan Costs At Closing Before Closing At Closing Before Closing Others Borrower-Paid Seller-Paid Paid By Closing Cost Details A. Origination Charges 01 1% of Loan Amount (Points) $2,110.00 02 Application Fee $500.00 03 Automated Underwriting Fee $300.00 04 05 06 07 08 $2,910.00 B. Services Borrower Did Not Shop For 01 Appraisal Field Review Fee to John Smith Appraisers Inc. (L)$705.00 02 Credit Report Fee to Information, Inc. $40.00 03 Flood Certification Fee to Info Co. $90.00 04 Property Tax Status Research Fee to Info Co. $150.00 05 06 07 08 09 10 $280.00 C. Services Borrower Did Shop For 01 Pest Inspection Fee to Pests Co. $200.00 02 Survey Fee to Surveys Co. $385.00 03 Title-Closing Protection Letter Fee to Epsilon Title Co. $500.00 04 Title-Examination Fee to Epsilon Title Co. $800.00 05 Title-Insurance Binder Fee to Epsilon Title Co. $900.00 06 Title-Lenders Coverage Premium to Epsilon Title Co. $800.00 07 08 09 10 $3,585.00 D. TOTAL LOAN COSTS (Borrower-Paid) Loan Costs Subtotals (A + B + C) $6,735.00 $40.00 $705.00 $6,775.00 Other Costs E. Taxes and Other Government Fees 01 Recording Fees Deed: $40.00 Mortgage: $145.00 $185.00 02 Transfer Tax Total to Any State $1,440.00 $185.00 F. Prepaids 01 Homeowner&apos;s Insurance Premium ( 12 mo.) to Insurance Co. $1,800.00 02 Mortgage Insurance Premium ( 1 mo.) to MI Co. $135.39 03 Prepaid Interest ( $23.44 per day from 4/15/2014 to 5/01/2014) $375.04 04 Property Taxes ( 6 mo.) to Any County USA $1,650.00 05 $3,960.43 G. Initial Escrow Payment at Closing 01 Homeowner&apos;s Insurance $150.00 per month for 2 mo. $300.00 02 Mortgage Insurance $135.39 per month for 2 mo. $270.78 03 Property Taxes $275.00 per month for 2 mo. $550.00 04 05 06 07 08 Aggregate Adjustment -$360.39 $760.39 H. Other 01 Real Estate Commission (Buyer) to Omega Real Estate Broker $7,200.00 02 Home Inspection Fee to HOA Acre Inc. $850.00 03 Home Warranty Fee to Engineers Inc. $750.00 04 Homeowner&apos;s Assoc. Special Assessment to HOA Acre Inc. $500.00 05 Mold Inspection Fee to Inspector Inc. $450.00 06 Real Estate Commission (Seller) to Alpha Real Estate Broker $7,200.00 07 Title-Owner&apos;s Coverage Premium (optional) to Epsilon Title Co. $1,500.00 08 $2,850.00 I. TOTAL OTHER COSTS (Borrower-Paid) Other Costs Subtotals (E + F + G + H) $7,755.82 $16,290.00 $750.00 $7,755.82 J. TOTAL CLOSING COSTS (Borrower-Paid) Closing Costs Subtotals (D + I) $14,490.82 $40.00 $16,290.00 $750.00 $705.00 Lender Credits $14,530.82 CLOSING DISCLOSURE PAGE 2 OF 5 l LOAN ID # 123456789 Calculating Cash to Close Use this table to see what has changed from your Loan Estimate. Loan Estimate Final Did this change? Total Closing Costs (J) $13,759.00 $14,531.00 YES l See Total Loan Costs (D) and Total Other Costs (I) Closing Costs Paid Before Closing $0 -$40.00 YES l You paid these Closing Costs before closing Closing Costs Financed (Paid from your Loan Amount) $0 $0 NO Down Payment/Funds from Borrower $29,000.00 $29,000.00 NO Deposit -$10,000.00 -$10,000.00 NO Funds for Borrower $0 $0 NO Seller Credits $0 -$2,500.00 YES l See Seller Credits in Section L Adjustments and Other Credits $0 -$1,637.50 YES l See details in Sections K and L Cash to Close $32,759.00 $29,353.50 BORROWER&apos;S TRANSACTION SELLER&apos;S TRANSACTION K. Due from Borrower at Closing $254,565.81 M. Due to Seller at Closing $240,075.00 01 Sale Price of Property $240,000.00 01 Sale Price of Property $240,000.00 02 Sale Price of Any Personal Property Included in Sale 02 Sale Price of Any Personal Property Included in Sale 03 Closing Costs Paid at Closing (J) $14,490.82 03 04 04 Adjustments 05 05 06 06 07 07 08 Adjustments for Items Paid by Seller in Advance Adjustments for Items Paid by Seller in Advance 08 City/Town Taxes to 09 City/Town Taxes to 09 County Taxes to 10 County Taxes to 10 Assessments to 11 Assessments to 11 HOA Dues 4/15/14 to 4/30/14 $75.00 12 HOA Dues 4/15/14 to 4/30/14 $75.00 12 13 13 14 14 15 15 16 L. Paid Already by or on Behalf of Borrower at Closing $225,212.50 N. Due from Seller at Closing $119,752.50 01 Deposit $10,000.00 01 Excess Deposit 02 Loan Amount $211,000.00 02 Closing Costs Paid at Closing (J) $16,290.00 03 Existing Loan(s) Assumed or Taken Subject to 03 Existing Loan(s) Assumed or Taken Subject to 04 04 Payoff of First Mortgage Loan $100,000.00 05 Seller Credit $2,500.00 05 Payoff of Second Mortgage Loan Other Credits 06 06 Rebate from Epsilon Title Co. from Epsilon Title Co. $750.00 07 07 08 Seller Credit $2,500.00 Adjustments 09 08 10 09 11 10 12 11 13 Adjustments for Items Unpaid by Seller Adjustments for Items Unpaid by Seller 12 City/Town Taxes to 14 City/Town Taxes to 13 County Taxes 1/1/14 to 4/14/14 $962.50 15 County Taxes 1/1/14 to 4/14/14 $962.50 14 Assessments to 16 Assessments to 15 17 16 18 17 19 CALCULATION CALCULATION Total Due from Borrower at Closing (K) $254,565.81 Total Due to Seller at Closing (M) $240,075.00 Total Paid Already by or on Behalf of Borrower at Closing (L) -$225,212.50 Total Due from Seller at Closing (N) -$119,752.50 Cash to Close 5 From To Borrower $29,353.32 Cash to Close From 5 To Seller $120,322.50 Summaries of Transactions Use this table to see a summary of your transaction. CLOSING DISCLOSURE PAGE 3 OF 5 l LOAN ID # 123456789 Additional Information About This Loan Loan Disclosures Assumption If you sell or transfer this property to another person, your lender will allow, under certain conditions, this person to assume this loan on the original terms. 5 will not allow assumption of this loan on the original terms. Demand Feature Your loan has a demand feature, which permits your lender to require early repayment of the loan. You should review your note for details. 5 does not have a demand feature. Late Payment If your payment is more than 15.00 days late, your lender will charge a late fee of 5% of the monthly principal and interest payment. Negative Amortization (Increase in Loan Amount) Under your loan terms, you are scheduled to make monthly payments that do not pay all of the interest due that month. As a result, your loan amount will increase (negatively amortize), and your loan amount will likely become larger than your original loan amount. Increases in your loan amount lower the equity you have in this property. may have monthly payments that do not pay all of the interest due that month. If you do, your loan amount will increase (negatively amortize), and, as a result, your loan amount may become larger than your original loan amount. Increases in your loan amount lower the equity you have in this property. 5 do not have a negative amortization feature. Partial Payments Your lender 5 may accept payments that are less than the full amount due (partial payments) and apply them to your loan. may hold them in a separate account until you pay the rest of the payment, and then apply the full payment to your loan. does not accept any partial payments. If this loan is sold, your new lender may have a different policy. Security Interest You are granting a security interest in 456 Somewhere Avenue, Anytown, NY 12345 You may lose this property if you do not make your payments or satisfy other obligations for this loan. Escrow Account For now, your loan 5 will have an escrow account (also called an &quot;impound&quot; or &quot;trust&quot; account) to pay the property costs listed below. Without an escrow account, you would pay them directly possibly in one or two large payments a year. Your lender may be liable for penalties and interest for failing to make a payment. Escrow Escrowed Property Costs over Year 1 $5,100.00 Estimated total amount over year 1 for your escrowed property costs: Homeowner&apos;s Insurance, Property Taxes Non-Escrowed Property Costs over Year 1 $1,800.00 Estimated total amount over year 1 for your non-escrowed property costs: Homeowner&apos;s Association Dues You may have other property costs. Initial Escrow Payment $760.39 A cushion for the escrow account you pay at closing. See Section G on page 2. Monthly Escrow Payment $425.00 The amount included in your total monthly payment. will not have an escrow account because you declined it your lender does not offer one. You must directly pay your property costs, such as taxes and homeowner&apos;s insurance. Contact your lender to ask if your loan can have an escrow account. No Escrow Estimated Property Costs over Year 1 Estimated total amount over year 1. You must pay these costs directly, possibly in one or two large payments a year. Escrow Waiver Fee In the future, Your property costs may change and, as a result, your escrow pay- ment may change. You may be able to cancel your escrow account, but if you do, you must pay your property costs directly. If you fail to pay your property taxes, your state or local government may (1) impose fines and penalties or (2) place a tax lien on this property. If you fail to pay any of your property costs, your lender may (1) add the amounts to your loan balance, (2) add an escrow account to your loan, or (3) require you to pay for property insurance that the lender buys on your behalf, which likely would cost more and provide fewer benefits than what you could buy on your own. Adjustable Interest Rate (AIR) Table Index + Margin LIBOR + 4% Initial Interest Rate 4% Minimum/Maximum Interest Rate 4%/12% Change Frequency First Change Beginning of 61st Month Subsequent Change Every 36th month after first change Limits on Interest Rate Changes First Change 2% Subsequent Change 2% CLOSING DISCLOSURE PAGE 4 OF 5 l LOAN ID # 123456789 Loan Calculations Total of Payments. Total you will have paid after you make all payments of principal, interest, mortgage insurance, and loan costs, as scheduled. $1.00 Finance Charge. The dollar amount the loan will cost you. $1.00 Amount Financed. The loan amount available after paying your upfront finance charge. $1.00 Annual Percentage Rate (APR). Your costs over the loan term expressed as a rate. This is not your interest rate. 1.000% Total Interest Percentage (TIP). The total amount of interest that you will pay over the loan term as a percentage of your loan amount. 1.000% Other Disclosures Appraisal If the property was appraised for your loan, your lender is required to give you a copy at no additional cost at least 3 days before closing. If you have not yet received it, please contact your lender at the information listed below. Contract Details See your note and security instrument for information about l what happens if you fail to make your payments, l what is a default on the loan, l situations in which your lender can require early repayment of the loan, and l the rules for making payments before they are due. Liability after Foreclosure If your lender forecloses on this property and the foreclosure does not cover the amount of unpaid balance on this loan, 5 state law may protect you from liability for the unpaid balance. If you refinance or take on any additional debt on this property, you may lose this protection and have to pay any debt remaining even after foreclosure. You may want to consult a lawyer for more information. state law does not protect you from liability for the unpaid balance. Loan Acceptance You do not have to accept this loan because you have received this form or signed a loan application. Refinance Refinancing this loan will depend on your future financial situation, the property value, and market conditions. You may not be able to refinance this loan. Tax Deductions If you borrow more than this property is worth, the interest on the loan amount above this property&apos;s fair market value is not deductible from your federal income taxes. You should consult a tax advisor for more information. ? Questions? If you have questions about the loan terms or costs on this form, use the contact information below. To get more information or make a complaint, contact the Consumer Financial Protection Bureau at www.consumerfinance.gov/mortgage-closing Contact Information Lender Mortgage Broker Real Estate Broker (B) Real Estate Broker (S) Settlement Agent Name Ficus Bank Omega Real Estate Broker Inc. Alpha Real Estate Broker Inc. Epsilon Title Company Address 4321 Random Blvd., Somecity, NY 12345 789 Local Lane, Sometown, NY 12345 987 Suburb Ct., Someplace, NY 12345 123 Commerce Pl, Somecity, NY 12345 NMLS ID 111111 NY License ID NY NY12345 NY NY121212 NY NY987655 Contact Joe Smith Samuel Green Joseph Cain Sarah Arnold Contact NMLS ID 123456 Contact NY License ID NY NY54321 NY NY212121 NY NY556788 Email joe_smith@ ficusbank.com sam@omegare.biz joe@alphare.biz sarah@epsilontitle.com Phone 123-456-7890 123-555-1717 321-555-7171 987-555-4321 CLOSING DISCLOSURE PAGE 5 OF 5 l LOAN ID # 123456789]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.nagesh.utility.PDFUtilTest.checkForFileContent(PDFUtilTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1074593562", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074593562'><pre>java.lang.AssertionError: expected [Closing Disclosure This form is a statement of final loan terms and closing costs. Compare this
+document with your Loan Estimate.
+Closing Information Transaction Information Loan Information
+Date Issued 4/07/2014
+Closing Date 4/15/2014
+Disbursement Date 4/15/2014
+Settlement Agent Epsilon Title Company
+File # 12-3456
+Property 456 Somewhere Avenue
+Anytown, NY 12345
+Sale Price $240,000
+Borrower Michael Jones &amp; Mary Stone
+123 Anywhere Street
+Anytown, NY 12345
+Seller Steve Cole &amp; Amy Doe
+321 Somewhere Drive
+Anytown, NY 12345
+Lender Ficus Bank
+Loan Term 30 years
+Purpose Purchase
+Product 5/3 Adjustable Rate
+Loan Type 5 Conventional FHA
+VA _____
+Loan ID # 123456789
+MIC # 000654321
+Loan Terms Can this amount increase after closing?
+Loan Amount $211,000 NO
+Interest Rate 4% YES l Adjusts every 3 years starting in year 6
+l Can go as high as 12% in year 15
+l See AIR Table on page 4 for details
+Monthly Principal &amp; Interest
+See projected payments below for your
+Estimated Total Monthly Payment
+$1,007.35 YES l Adjusts every 3 years starting in year 6
+l Can go as high as $1,870 in year 15
+Does the loan have these features?
+Prepayment Penalty NO
+Balloon Payment NO
+Projected Payments
+Payment Calculation
+Principal &amp; Interest
+Mortgage Insurance
+Estimated Escrow
+Amount can increase over time
++
++
+$1,007.35
+135.39
+425.00
++
++
+$1,007 min
+$1,229 max
+135.39
+425.00
++
++
+$1,007 min
+$1,451 max
+135.39
+425.00
++
++
+$1,007 min
+$1,870 max
+-----
+425.00
+Estimated Total
+Monthly Payment $1,567.74 $1,567 - $1,789 $1,567 - $2,011 $1,432 - $2,295
+Years 1-5 Years 6-8 Years 9-11 Years 12-30
+Estimated Taxes, Insurance
+&amp; Assessments
+Amount can increase over time
+See page 4 for details
+$575.00
+a month
+This estimate includes
+5 Property Taxes
+5 Homeowners Insurance
+5 Other: Homeowners Association Dues
+See Escrow Account on page 4 for details. You must pay for other property
+costs separately.
+In escrow?
+YES
+YES
+NO
+Costs at Closing
+Closing Costs $14,530.82 Includes $6,775.00 in Loan Costs + $7,755.82 in Other Costs - $0
+in Lender Credits. See page 2 for details.
+Cash To Close $29,353.32 Includes Closing Costs. See Calculating Cash to Close on page 3 for details.
+CLOSING DISCLOSURE PAGE 1 OF 5 l LOAN ID # 123456789
+Loan Costs At Closing Before Closing At Closing Before Closing Others
+Borrower-Paid Seller-Paid Paid By
+Closing Cost Details
+A. Origination Charges
+01 1% of Loan Amount (Points) $2,110.00
+02 Application Fee $500.00
+03 Automated Underwriting Fee $300.00
+04
+05
+06
+07
+08
+$2,910.00
+B. Services Borrower Did Not Shop For
+01 Appraisal Field Review Fee to John Smith Appraisers Inc. (L)$705.00
+02 Credit Report Fee to Information, Inc. $40.00
+03 Flood Certification Fee to Info Co. $90.00
+04 Property Tax Status Research Fee to Info Co. $150.00
+05
+06
+07
+08
+09
+10
+$280.00
+C. Services Borrower Did Shop For
+01 Pest Inspection Fee to Pests Co. $200.00
+02 Survey Fee to Surveys Co. $385.00
+03 Title-Closing Protection Letter Fee to Epsilon Title Co. $500.00
+04 Title-Examination Fee to Epsilon Title Co. $800.00
+05 Title-Insurance Binder Fee to Epsilon Title Co. $900.00
+06 Title-Lenders Coverage Premium to Epsilon Title Co. $800.00
+07
+08
+09
+10
+$3,585.00
+D. TOTAL LOAN COSTS (Borrower-Paid)
+Loan Costs Subtotals (A + B + C) $6,735.00 $40.00 $705.00
+$6,775.00
+Other Costs
+E. Taxes and Other Government Fees
+01 Recording Fees Deed: $40.00 Mortgage: $145.00 $185.00
+02 Transfer Tax Total to Any State $1,440.00
+$185.00
+F. Prepaids
+01 Homeowner&apos;s Insurance Premium ( 12 mo.) to Insurance Co. $1,800.00
+02 Mortgage Insurance Premium ( 1 mo.) to MI Co. $135.39
+03 Prepaid Interest ( $23.44 per day from 4/15/2014 to 5/01/2014) $375.04
+04 Property Taxes ( 6 mo.) to Any County USA $1,650.00
+05
+$3,960.43
+G. Initial Escrow Payment at Closing
+01 Homeowner&apos;s Insurance $150.00 per month for 2 mo. $300.00
+02 Mortgage Insurance $135.39 per month for 2 mo. $270.78
+03 Property Taxes $275.00 per month for 2 mo. $550.00
+04
+05
+06
+07
+08 Aggregate Adjustment -$360.39
+$760.39
+H. Other
+01 Real Estate Commission (Buyer) to Omega Real Estate Broker $7,200.00
+02 Home Inspection Fee to HOA Acre Inc. $850.00
+03 Home Warranty Fee to Engineers Inc. $750.00
+04
+Homeowner&apos;s Assoc. Special
+Assessment to HOA Acre Inc. $500.00
+05 Mold Inspection Fee to Inspector Inc. $450.00
+06 Real Estate Commission (Seller) to Alpha Real Estate Broker $7,200.00
+07
+Title-Owner&apos;s Coverage Premium
+(optional) to Epsilon Title Co. $1,500.00
+08
+$2,850.00
+I. TOTAL OTHER COSTS (Borrower-Paid)
+Other Costs Subtotals (E + F + G + H) $7,755.82 $16,290.00 $750.00
+$7,755.82
+J. TOTAL CLOSING COSTS (Borrower-Paid)
+Closing Costs Subtotals (D + I) $14,490.82 $40.00 $16,290.00 $750.00 $705.00
+Lender Credits
+$14,530.82
+CLOSING DISCLOSURE PAGE 2 OF 5 l LOAN ID # 123456789
+Calculating Cash to Close Use this table to see what has changed from your Loan Estimate.
+Loan Estimate Final Did this change?
+Total Closing Costs (J) $13,759.00 $14,531.00 YES l See Total Loan Costs (D) and Total Other Costs (I)
+Closing Costs Paid Before Closing $0 -$40.00 YES l You paid these Closing Costs before closing
+Closing Costs Financed
+(Paid from your Loan Amount)
+$0 $0 NO
+Down Payment/Funds from Borrower $29,000.00 $29,000.00 NO
+Deposit -$10,000.00 -$10,000.00 NO
+Funds for Borrower $0 $0 NO
+Seller Credits $0 -$2,500.00 YES l See Seller Credits in Section L
+Adjustments and Other Credits $0 -$1,637.50 YES l See details in Sections K and L
+Cash to Close $32,759.00 $29,353.50
+BORROWER&apos;S TRANSACTION SELLER&apos;S TRANSACTION
+K. Due from Borrower at Closing $254,565.81 M. Due to Seller at Closing $240,075.00
+01 Sale Price of Property $240,000.00 01 Sale Price of Property $240,000.00
+02 Sale Price of Any Personal Property Included in Sale 02 Sale Price of Any Personal Property Included in Sale
+03 Closing Costs Paid at Closing (J) $14,490.82 03
+04 04
+Adjustments 05
+05 06
+06 07
+07 08
+Adjustments for Items Paid by Seller in Advance Adjustments for Items Paid by Seller in Advance
+08 City/Town Taxes to 09 City/Town Taxes to
+09 County Taxes to 10 County Taxes to
+10 Assessments to 11 Assessments to
+11 HOA Dues 4/15/14 to 4/30/14 $75.00 12 HOA Dues 4/15/14 to 4/30/14 $75.00
+12 13
+13 14
+14 15
+15 16
+L. Paid Already by or on Behalf of Borrower at Closing $225,212.50 N. Due from Seller at Closing $119,752.50
+01 Deposit $10,000.00 01 Excess Deposit
+02 Loan Amount $211,000.00 02 Closing Costs Paid at Closing (J) $16,290.00
+03 Existing Loan(s) Assumed or Taken Subject to 03 Existing Loan(s) Assumed or Taken Subject to
+04 04 Payoff of First Mortgage Loan $100,000.00
+05 Seller Credit $2,500.00 05 Payoff of Second Mortgage Loan
+Other Credits 06
+06 Rebate from Epsilon Title Co. from Epsilon Title Co. $750.00 07
+07 08 Seller Credit $2,500.00
+Adjustments 09
+08 10
+09 11
+10 12
+11 13
+Adjustments for Items Unpaid by Seller Adjustments for Items Unpaid by Seller
+12 City/Town Taxes to 14 City/Town Taxes to
+13 County Taxes 1/1/14 to 4/14/14 $962.50 15 County Taxes 1/1/14 to 4/14/14 $962.50
+14 Assessments to 16 Assessments to
+15 17
+16 18
+17 19
+CALCULATION CALCULATION
+Total Due from Borrower at Closing (K) $254,565.81 Total Due to Seller at Closing (M) $240,075.00
+Total Paid Already by or on Behalf of Borrower at Closing (L) -$225,212.50 Total Due from Seller at Closing (N) -$119,752.50
+Cash to Close 5 From To Borrower $29,353.32 Cash to Close From 5 To Seller $120,322.50
+Summaries of Transactions Use this table to see a summary of your transaction.
+CLOSING DISCLOSURE PAGE 3 OF 5 l LOAN ID # 123456789
+Additional Information About This Loan
+Loan Disclosures
+Assumption
+If you sell or transfer this property to another person, your lender
+will allow, under certain conditions, this person to assume this
+loan on the original terms.
+5 will not allow assumption of this loan on the original terms.
+Demand Feature
+Your loan
+has a demand feature, which permits your lender to require early
+repayment of the loan. You should review your note for details.
+5 does not have a demand feature.
+Late Payment
+If your payment is more than 15.00 days late, your lender will charge
+a late fee of 5% of the monthly principal and interest payment.
+Negative Amortization (Increase in Loan Amount)
+Under your loan terms, you
+are scheduled to make monthly payments that do not pay all of
+the interest due that month. As a result, your loan amount will
+increase (negatively amortize), and your loan amount will likely
+become larger than your original loan amount. Increases in your
+loan amount lower the equity you have in this property.
+may have monthly payments that do not pay all of the interest
+due that month. If you do, your loan amount will increase
+(negatively amortize), and, as a result, your loan amount may
+become larger than your original loan amount. Increases in your
+loan amount lower the equity you have in this property.
+5 do not have a negative amortization feature.
+Partial Payments
+Your lender
+5 may accept payments that are less than the full amount due
+(partial payments) and apply them to your loan.
+may hold them in a separate account until you pay the rest of the
+payment, and then apply the full payment to your loan.
+does not accept any partial payments.
+If this loan is sold, your new lender may have a different policy.
+Security Interest
+You are granting a security interest in
+456 Somewhere Avenue, Anytown, NY 12345
+You may lose this property if you do not make your payments or
+satisfy other obligations for this loan.
+Escrow Account
+For now, your loan
+5will have an escrow account (also called an &quot;impound&quot; or &quot;trust&quot;
+account) to pay the property costs listed below. Without an
+escrow account, you would pay them directly possibly in one or
+two large payments a year. Your lender may be liable for penalties
+and interest for failing to make a payment.
+Escrow
+Escrowed
+Property Costs
+over Year 1
+$5,100.00 Estimated total amount over year 1 for
+your escrowed property costs:
+Homeowner&apos;s Insurance, Property
+Taxes
+Non-Escrowed
+Property Costs
+over Year 1
+$1,800.00 Estimated total amount over year 1 for
+your non-escrowed property costs:
+Homeowner&apos;s Association Dues
+You may have other property costs.
+Initial Escrow
+Payment
+$760.39 A cushion for the escrow account you
+pay at closing. See Section G on page 2.
+Monthly Escrow
+Payment
+$425.00 The amount included in your total
+monthly payment.
+will not have an escrow account because you declined it
+your lender does not offer one. You must directly pay your
+property costs, such as taxes and homeowner&apos;s insurance.
+Contact your lender to ask if your loan can have an escrow
+account.
+No Escrow
+Estimated
+Property Costs
+over Year 1
+Estimated total amount over year 1. You
+must pay these costs directly, possibly
+in one or two large payments a year.
+Escrow Waiver Fee
+In the future,
+Your property costs may change and, as a result, your escrow payment
+may change. You may be able to cancel your escrow account,
+but if you do, you must pay your property costs directly. If you fail to
+pay your property taxes, your state or local government may (1)
+impose fines and penalties or (2) place a tax lien on this property. If
+you fail to pay any of your property costs, your lender may (1) add
+the amounts to your loan balance, (2) add an escrow account to
+your loan, or (3) require you to pay for property insurance that the
+lender buys on your behalf, which likely would cost more and
+provide fewer benefits than what you could buy on your own.
+Adjustable Interest Rate (AIR) Table
+Index + Margin LIBOR + 4%
+Initial Interest Rate 4%
+Minimum/Maximum Interest Rate 4%/12%
+Change Frequency
+First Change Beginning of 61st Month
+Subsequent Change Every 36th month after first change
+Limits on Interest Rate Changes
+First Change 2%
+Subsequent Change 2%
+CLOSING DISCLOSURE PAGE 4 OF 5 l LOAN ID # 123456789
+Loan Calculations
+Total of Payments. Total you will have paid after
+you make all payments of principal, interest,
+mortgage insurance, and loan costs, as scheduled. $1.00
+Finance Charge. The dollar amount the loan will
+cost you. $1.00
+Amount Financed. The loan amount available
+after paying your upfront finance charge. $1.00
+Annual Percentage Rate (APR). Your costs over
+the loan term expressed as a rate. This is not your
+interest rate. 1.000%
+Total Interest Percentage (TIP). The total
+amount of interest that you will pay over the loan
+term as a percentage of your loan amount. 1.000%
+Other Disclosures
+Appraisal
+If the property was appraised for your loan, your lender is required to
+give you a copy at no additional cost at least 3 days before closing.
+If you have not yet received it, please contact your lender at the
+information listed below.
+Contract Details
+See your note and security instrument for information about
+l what happens if you fail to make your payments,
+l what is a default on the loan,
+l situations in which your lender can require early repayment of the
+loan, and
+l the rules for making payments before they are due.
+Liability after Foreclosure
+If your lender forecloses on this property and the foreclosure does not
+cover the amount of unpaid balance on this loan,
+5 state law may protect you from liability for the unpaid balance. If you
+refinance or take on any additional debt on this property, you may
+lose this protection and have to pay any debt remaining even after
+foreclosure. You may want to consult a lawyer for more information.
+state law does not protect you from liability for the unpaid balance.
+Loan Acceptance
+You do not have to accept this loan because you have received this form
+or signed a loan application.
+Refinance
+Refinancing this loan will depend on your future financial situation,
+the property value, and market conditions. You may not be able to
+refinance this loan.
+Tax Deductions
+If you borrow more than this property is worth, the interest on the
+loan amount above this property&apos;s fair market value is not deductible
+from your federal income taxes. You should consult a tax advisor for
+more information.
+? Questions? If you have questions about the
+loan terms or costs on this form, use the contact
+information below. To get more information
+or make a complaint, contact the Consumer
+Financial Protection Bureau at
+www.consumerfinance.gov/mortgage-closing
+Contact Information
+Lender Mortgage Broker Real Estate Broker (B) Real Estate Broker (S) Settlement Agent
+Name Ficus Bank Omega Real Estate
+Broker Inc.
+Alpha Real Estate Broker
+Inc.
+Epsilon Title Company
+Address 4321 Random Blvd.,
+Somecity, NY 12345
+789 Local Lane,
+Sometown, NY 12345
+987 Suburb Ct.,
+Someplace, NY 12345
+123 Commerce Pl,
+Somecity, NY 12345
+NMLS ID 111111
+NY License ID NY NY12345 NY NY121212 NY NY987655
+Contact Joe Smith Samuel Green Joseph Cain Sarah Arnold
+Contact NMLS ID 123456
+Contact
+NY License ID
+NY NY54321 NY NY212121 NY NY556788
+Email joe_smith@
+ficusbank.com
+sam@omegare.biz joe@alphare.biz sarah@epsilontitle.com
+Phone 123-456-7890 123-555-1717 321-555-7171 987-555-4321] but found [Closing Disclosure This form is a statement of final loan terms and closing costs. Compare thisdocument with your Loan Estimate. Closing Information Transaction Information Loan Information Date Issued 4/07/2014 Closing Date 4/15/2014 Disbursement Date 4/15/2014 Settlement Agent Epsilon Title Company File # 12-3456 Property 456 Somewhere Avenue Anytown, NY 12345 Sale Price $240,000 Borrower Michael Jones &amp; Mary Stone 123 Anywhere Street Anytown, NY 12345 Seller Steve Cole &amp; Amy Doe 321 Somewhere Drive Anytown, NY 12345 Lender Ficus Bank Loan Term 30 years Purpose Purchase Product 5/3 Adjustable Rate Loan Type 5 Conventional FHA VA _____ Loan ID # 123456789 MIC # 000654321 Loan Terms Can this amount increase after closing? Loan Amount $211,000 NO Interest Rate 4% YES l Adjusts every 3 years starting in year 6 l Can go as high as 12% in year 15 l See AIR Table on page 4 for details Monthly Principal &amp; Interest See projected payments below for your Estimated Total Monthly Payment $1,007.35 YES l Adjusts every 3 years starting in year 6 l Can go as high as $1,870 in year 15 Does the loan have these features? Prepayment Penalty NO Balloon Payment NO Projected Payments Payment Calculation Principal &amp; Interest Mortgage Insurance Estimated Escrow Amount can increase over time + + $1,007.35 135.39 425.00 + + $1,007 min $1,229 max 135.39 425.00 + + $1,007 min $1,451 max 135.39 425.00 + + $1,007 min $1,870 max ----- 425.00 Estimated Total Monthly Payment $1,567.74 $1,567 - $1,789 $1,567 - $2,011 $1,432 - $2,295 Years 1-5 Years 6-8 Years 9-11 Years 12-30 Estimated Taxes, Insurance &amp; Assessments Amount can increase over time See page 4 for details $575.00 a month This estimate includes 5 Property Taxes 5 Homeowners Insurance 5 Other: Homeowners Association Dues See Escrow Account on page 4 for details. You must pay for other property costs separately. In escrow? YES YES NO Costs at Closing Closing Costs $14,530.82 Includes $6,775.00 in Loan Costs + $7,755.82 in Other Costs - $0 in Lender Credits. See page 2 for details. Cash To Close $29,353.32 Includes Closing Costs. See Calculating Cash to Close on page 3 for details. CLOSING DISCLOSURE PAGE 1 OF 5 l LOAN ID # 123456789 Loan Costs At Closing Before Closing At Closing Before Closing Others Borrower-Paid Seller-Paid Paid By Closing Cost Details A. Origination Charges 01 1% of Loan Amount (Points) $2,110.00 02 Application Fee $500.00 03 Automated Underwriting Fee $300.00 04 05 06 07 08 $2,910.00 B. Services Borrower Did Not Shop For 01 Appraisal Field Review Fee to John Smith Appraisers Inc. (L)$705.00 02 Credit Report Fee to Information, Inc. $40.00 03 Flood Certification Fee to Info Co. $90.00 04 Property Tax Status Research Fee to Info Co. $150.00 05 06 07 08 09 10 $280.00 C. Services Borrower Did Shop For 01 Pest Inspection Fee to Pests Co. $200.00 02 Survey Fee to Surveys Co. $385.00 03 Title-Closing Protection Letter Fee to Epsilon Title Co. $500.00 04 Title-Examination Fee to Epsilon Title Co. $800.00 05 Title-Insurance Binder Fee to Epsilon Title Co. $900.00 06 Title-Lenders Coverage Premium to Epsilon Title Co. $800.00 07 08 09 10 $3,585.00 D. TOTAL LOAN COSTS (Borrower-Paid) Loan Costs Subtotals (A + B + C) $6,735.00 $40.00 $705.00 $6,775.00 Other Costs E. Taxes and Other Government Fees 01 Recording Fees Deed: $40.00 Mortgage: $145.00 $185.00 02 Transfer Tax Total to Any State $1,440.00 $185.00 F. Prepaids 01 Homeowner&apos;s Insurance Premium ( 12 mo.) to Insurance Co. $1,800.00 02 Mortgage Insurance Premium ( 1 mo.) to MI Co. $135.39 03 Prepaid Interest ( $23.44 per day from 4/15/2014 to 5/01/2014) $375.04 04 Property Taxes ( 6 mo.) to Any County USA $1,650.00 05 $3,960.43 G. Initial Escrow Payment at Closing 01 Homeowner&apos;s Insurance $150.00 per month for 2 mo. $300.00 02 Mortgage Insurance $135.39 per month for 2 mo. $270.78 03 Property Taxes $275.00 per month for 2 mo. $550.00 04 05 06 07 08 Aggregate Adjustment -$360.39 $760.39 H. Other 01 Real Estate Commission (Buyer) to Omega Real Estate Broker $7,200.00 02 Home Inspection Fee to HOA Acre Inc. $850.00 03 Home Warranty Fee to Engineers Inc. $750.00 04 Homeowner&apos;s Assoc. Special Assessment to HOA Acre Inc. $500.00 05 Mold Inspection Fee to Inspector Inc. $450.00 06 Real Estate Commission (Seller) to Alpha Real Estate Broker $7,200.00 07 Title-Owner&apos;s Coverage Premium (optional) to Epsilon Title Co. $1,500.00 08 $2,850.00 I. TOTAL OTHER COSTS (Borrower-Paid) Other Costs Subtotals (E + F + G + H) $7,755.82 $16,290.00 $750.00 $7,755.82 J. TOTAL CLOSING COSTS (Borrower-Paid) Closing Costs Subtotals (D + I) $14,490.82 $40.00 $16,290.00 $750.00 $705.00 Lender Credits $14,530.82 CLOSING DISCLOSURE PAGE 2 OF 5 l LOAN ID # 123456789 Calculating Cash to Close Use this table to see what has changed from your Loan Estimate. Loan Estimate Final Did this change? Total Closing Costs (J) $13,759.00 $14,531.00 YES l See Total Loan Costs (D) and Total Other Costs (I) Closing Costs Paid Before Closing $0 -$40.00 YES l You paid these Closing Costs before closing Closing Costs Financed (Paid from your Loan Amount) $0 $0 NO Down Payment/Funds from Borrower $29,000.00 $29,000.00 NO Deposit -$10,000.00 -$10,000.00 NO Funds for Borrower $0 $0 NO Seller Credits $0 -$2,500.00 YES l See Seller Credits in Section L Adjustments and Other Credits $0 -$1,637.50 YES l See details in Sections K and L Cash to Close $32,759.00 $29,353.50 BORROWER&apos;S TRANSACTION SELLER&apos;S TRANSACTION K. Due from Borrower at Closing $254,565.81 M. Due to Seller at Closing $240,075.00 01 Sale Price of Property $240,000.00 01 Sale Price of Property $240,000.00 02 Sale Price of Any Personal Property Included in Sale 02 Sale Price of Any Personal Property Included in Sale 03 Closing Costs Paid at Closing (J) $14,490.82 03 04 04 Adjustments 05 05 06 06 07 07 08 Adjustments for Items Paid by Seller in Advance Adjustments for Items Paid by Seller in Advance 08 City/Town Taxes to 09 City/Town Taxes to 09 County Taxes to 10 County Taxes to 10 Assessments to 11 Assessments to 11 HOA Dues 4/15/14 to 4/30/14 $75.00 12 HOA Dues 4/15/14 to 4/30/14 $75.00 12 13 13 14 14 15 15 16 L. Paid Already by or on Behalf of Borrower at Closing $225,212.50 N. Due from Seller at Closing $119,752.50 01 Deposit $10,000.00 01 Excess Deposit 02 Loan Amount $211,000.00 02 Closing Costs Paid at Closing (J) $16,290.00 03 Existing Loan(s) Assumed or Taken Subject to 03 Existing Loan(s) Assumed or Taken Subject to 04 04 Payoff of First Mortgage Loan $100,000.00 05 Seller Credit $2,500.00 05 Payoff of Second Mortgage Loan Other Credits 06 06 Rebate from Epsilon Title Co. from Epsilon Title Co. $750.00 07 07 08 Seller Credit $2,500.00 Adjustments 09 08 10 09 11 10 12 11 13 Adjustments for Items Unpaid by Seller Adjustments for Items Unpaid by Seller 12 City/Town Taxes to 14 City/Town Taxes to 13 County Taxes 1/1/14 to 4/14/14 $962.50 15 County Taxes 1/1/14 to 4/14/14 $962.50 14 Assessments to 16 Assessments to 15 17 16 18 17 19 CALCULATION CALCULATION Total Due from Borrower at Closing (K) $254,565.81 Total Due to Seller at Closing (M) $240,075.00 Total Paid Already by or on Behalf of Borrower at Closing (L) -$225,212.50 Total Due from Seller at Closing (N) -$119,752.50 Cash to Close 5 From To Borrower $29,353.32 Cash to Close From 5 To Seller $120,322.50 Summaries of Transactions Use this table to see a summary of your transaction. CLOSING DISCLOSURE PAGE 3 OF 5 l LOAN ID # 123456789 Additional Information About This Loan Loan Disclosures Assumption If you sell or transfer this property to another person, your lender will allow, under certain conditions, this person to assume this loan on the original terms. 5 will not allow assumption of this loan on the original terms. Demand Feature Your loan has a demand feature, which permits your lender to require early repayment of the loan. You should review your note for details. 5 does not have a demand feature. Late Payment If your payment is more than 15.00 days late, your lender will charge a late fee of 5% of the monthly principal and interest payment. Negative Amortization (Increase in Loan Amount) Under your loan terms, you are scheduled to make monthly payments that do not pay all of the interest due that month. As a result, your loan amount will increase (negatively amortize), and your loan amount will likely become larger than your original loan amount. Increases in your loan amount lower the equity you have in this property. may have monthly payments that do not pay all of the interest due that month. If you do, your loan amount will increase (negatively amortize), and, as a result, your loan amount may become larger than your original loan amount. Increases in your loan amount lower the equity you have in this property. 5 do not have a negative amortization feature. Partial Payments Your lender 5 may accept payments that are less than the full amount due (partial payments) and apply them to your loan. may hold them in a separate account until you pay the rest of the payment, and then apply the full payment to your loan. does not accept any partial payments. If this loan is sold, your new lender may have a different policy. Security Interest You are granting a security interest in 456 Somewhere Avenue, Anytown, NY 12345 You may lose this property if you do not make your payments or satisfy other obligations for this loan. Escrow Account For now, your loan 5 will have an escrow account (also called an &quot;impound&quot; or &quot;trust&quot; account) to pay the property costs listed below. Without an escrow account, you would pay them directly possibly in one or two large payments a year. Your lender may be liable for penalties and interest for failing to make a payment. Escrow Escrowed Property Costs over Year 1 $5,100.00 Estimated total amount over year 1 for your escrowed property costs: Homeowner&apos;s Insurance, Property Taxes Non-Escrowed Property Costs over Year 1 $1,800.00 Estimated total amount over year 1 for your non-escrowed property costs: Homeowner&apos;s Association Dues You may have other property costs. Initial Escrow Payment $760.39 A cushion for the escrow account you pay at closing. See Section G on page 2. Monthly Escrow Payment $425.00 The amount included in your total monthly payment. will not have an escrow account because you declined it your lender does not offer one. You must directly pay your property costs, such as taxes and homeowner&apos;s insurance. Contact your lender to ask if your loan can have an escrow account. No Escrow Estimated Property Costs over Year 1 Estimated total amount over year 1. You must pay these costs directly, possibly in one or two large payments a year. Escrow Waiver Fee In the future, Your property costs may change and, as a result, your escrow pay- ment may change. You may be able to cancel your escrow account, but if you do, you must pay your property costs directly. If you fail to pay your property taxes, your state or local government may (1) impose fines and penalties or (2) place a tax lien on this property. If you fail to pay any of your property costs, your lender may (1) add the amounts to your loan balance, (2) add an escrow account to your loan, or (3) require you to pay for property insurance that the lender buys on your behalf, which likely would cost more and provide fewer benefits than what you could buy on your own. Adjustable Interest Rate (AIR) Table Index + Margin LIBOR + 4% Initial Interest Rate 4% Minimum/Maximum Interest Rate 4%/12% Change Frequency First Change Beginning of 61st Month Subsequent Change Every 36th month after first change Limits on Interest Rate Changes First Change 2% Subsequent Change 2% CLOSING DISCLOSURE PAGE 4 OF 5 l LOAN ID # 123456789 Loan Calculations Total of Payments. Total you will have paid after you make all payments of principal, interest, mortgage insurance, and loan costs, as scheduled. $1.00 Finance Charge. The dollar amount the loan will cost you. $1.00 Amount Financed. The loan amount available after paying your upfront finance charge. $1.00 Annual Percentage Rate (APR). Your costs over the loan term expressed as a rate. This is not your interest rate. 1.000% Total Interest Percentage (TIP). The total amount of interest that you will pay over the loan term as a percentage of your loan amount. 1.000% Other Disclosures Appraisal If the property was appraised for your loan, your lender is required to give you a copy at no additional cost at least 3 days before closing. If you have not yet received it, please contact your lender at the information listed below. Contract Details See your note and security instrument for information about l what happens if you fail to make your payments, l what is a default on the loan, l situations in which your lender can require early repayment of the loan, and l the rules for making payments before they are due. Liability after Foreclosure If your lender forecloses on this property and the foreclosure does not cover the amount of unpaid balance on this loan, 5 state law may protect you from liability for the unpaid balance. If you refinance or take on any additional debt on this property, you may lose this protection and have to pay any debt remaining even after foreclosure. You may want to consult a lawyer for more information. state law does not protect you from liability for the unpaid balance. Loan Acceptance You do not have to accept this loan because you have received this form or signed a loan application. Refinance Refinancing this loan will depend on your future financial situation, the property value, and market conditions. You may not be able to refinance this loan. Tax Deductions If you borrow more than this property is worth, the interest on the loan amount above this property&apos;s fair market value is not deductible from your federal income taxes. You should consult a tax advisor for more information. ? Questions? If you have questions about the loan terms or costs on this form, use the contact information below. To get more information or make a complaint, contact the Consumer Financial Protection Bureau at www.consumerfinance.gov/mortgage-closing Contact Information Lender Mortgage Broker Real Estate Broker (B) Real Estate Broker (S) Settlement Agent Name Ficus Bank Omega Real Estate Broker Inc. Alpha Real Estate Broker Inc. Epsilon Title Company Address 4321 Random Blvd., Somecity, NY 12345 789 Local Lane, Sometown, NY 12345 987 Suburb Ct., Someplace, NY 12345 123 Commerce Pl, Somecity, NY 12345 NMLS ID 111111 NY License ID NY NY12345 NY NY121212 NY NY987655 Contact Joe Smith Samuel Green Joseph Cain Sarah Arnold Contact NMLS ID 123456 Contact NY License ID NY NY54321 NY NY212121 NY NY556788 Email joe_smith@ ficusbank.com sam@omegare.biz joe@alphare.biz sarah@epsilontitle.com Phone 123-456-7890 123-555-1717 321-555-7171 987-555-4321 CLOSING DISCLOSURE PAGE 5 OF 5 l LOAN ID # 123456789]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.nagesh.utility.PDFUtilTest.checkForFileContent(PDFUtilTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>1</td>
+<td>com.nagesh.utility.PDFUtilTest@61832929</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nagesh.utility.PDFUtilTest.checkForPDFPageCount()'><b>checkForPDFPageCount</b><br>Test class: com.nagesh.utility.PDFUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.nagesh.utility.PDFUtilTest@61832929</td></tr>
+<tr>
+<td title='com.nagesh.utility.PDFUtilTest.comparePDFImageModeDiffSpecificPage()'><b>comparePDFImageModeDiffSpecificPage</b><br>Test class: com.nagesh.utility.PDFUtilTest</td>
+<td></td>
+<td>1</td>
+<td>com.nagesh.utility.PDFUtilTest@61832929</td></tr>
+<tr>
+<td title='com.nagesh.utility.PDFUtilTest.comparePDFImageModeSame()'><b>comparePDFImageModeSame</b><br>Test class: com.nagesh.utility.PDFUtilTest</td>
+<td></td>
+<td>2</td>
+<td>com.nagesh.utility.PDFUtilTest@61832929</td></tr>
+<tr>
+<td title='com.nagesh.utility.PDFUtilTest.comparePDFTextModeSameAfterExcludePattern()'><b>comparePDFTextModeSameAfterExcludePattern</b><br>Test class: com.nagesh.utility.PDFUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.nagesh.utility.PDFUtilTest@61832929</td></tr>
+<tr>
+<td title='com.nagesh.utility.PDFUtilTest.extractImages()'><b>extractImages</b><br>Test class: com.nagesh.utility.PDFUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.nagesh.utility.PDFUtilTest@61832929</td></tr>
+<tr>
+<td title='com.nagesh.utility.PDFUtilTest.saveAsImages()'><b>saveAsImages</b><br>Test class: com.nagesh.utility.PDFUtilTest</td>
+<td></td>
+<td>7</td>
+<td>com.nagesh.utility.PDFUtilTest@61832929</td></tr>
+</table><p>
+</body>
+</html>
